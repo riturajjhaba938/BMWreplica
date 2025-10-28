@@ -1,0 +1,483 @@
+body {
+  margin: 0;
+  font-family: "BMW Type Next", "Helvetica Neue", sans-serif;
+  background: #fff;
+  color: #111;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: linear-gradient(to bottom, rgba(7, 7, 7, 0.6), rgba(180, 178, 178, 0.6));
+  backdrop-filter: blur(6px);
+  padding: 0 40px;
+  z-index: 1000;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-placeholder {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  /* background: radial-gradient(circle, #fff 40%, #3b3b3b 41%); */
+}
+
+/* Nav menu */
+nav {
+  flex: 1;
+  display: flex;
+  justify-content: left;
+  padding: 20vh;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+nav a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--bmw-blue);
+}
+
+/* Right icons */
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon-placeholder {
+  width: 22px;
+  height: 22px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  transition: transform 0.4s ease, border-color 0.4s ease;
+}
+
+.icon-placeholder:hover {
+  transform: scale(1.2) rotateY(20deg);
+  border-color: var(--bmw-blue);
+}
+.icon-placeholder img{
+    width: 100%;
+    height: 100%;
+}
+/* HERO */
+.hero {
+  text-align: center;
+  /* padding: 60px 8%; */
+  perspective: 1000px;
+}
+
+.hero-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 1s ease;
+}
+
+.hero-img {
+  width: 100%;
+  
+  transition: transform 1s ease, filter 0.5s ease;
+  transform: translateY(20px) scale(0.98);
+  animation: fadeUp 1.2s ease forwards;
+}
+
+.hero-image-container:hover .hero-img {
+  transform: rotateY(5deg) rotateX(3deg) scale(1.02);
+  filter: brightness(1.1);
+}
+
+.hero h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 40px;
+  color: #000;
+}
+
+.hero p {
+  color: #333;
+  max-width: 750px;
+  margin: 20px auto;
+  line-height: 1.6;
+}
+
+/* LEGACY SECTION */
+.legacy {
+  padding: 80px 0;
+  background: #fff;
+  text-align: center;
+}
+
+.legacy h2 {
+  font-size: 1.8rem;
+  margin-bottom: 40px;
+}
+
+.legacy {
+  padding: 80px 8%;
+  background: #fff;
+  text-align: center;
+}
+
+.legacy h2 {
+  font-size: 1.8rem;
+  margin-bottom: 50px;
+  font-weight: 700;
+  color: #000;
+  letter-spacing: 0.5px;
+}
+
+.legacy-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 40px;
+  /* flex-wrap: wrap; */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.legacy-card {
+  flex: 1 1 250px;
+  max-width: 270px;
+  background: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  text-align: left;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUpScroll 1s ease forwards;
+}
+
+.legacy-card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.legacy-card:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.legacy-card:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.legacy-card:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+.legacy-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  transition: transform 0.5s ease, filter 0.4s ease;
+}
+
+.legacy-card:hover img {
+  transform: scale(1.05);
+  filter: brightness(1.15);
+}
+
+.legacy-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fadeUpScroll {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive layout */
+@media (max-width: 900px) {
+  .legacy-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.carousel-track {
+  display: flex;
+  gap: 30px;
+  animation: slide 22s linear infinite;
+}
+
+.carousel:hover .carousel-track {
+  animation-play-state: paused;
+}
+
+.legacy-card {
+  min-width: 300px;
+  flex: 0 0 300px;
+  background: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.legacy-card:hover {
+  transform: scale(1.05) rotateY(5deg);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.img-placeholder {
+  background: #ddd;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Animations */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-25%);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  75% {
+    transform: translateX(-75%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.book-experience {
+  padding: 100px 10%;
+  background: #fff;
+  text-align: center;
+  opacity: 505;
+}
+.book-experience h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.book-experience p {
+  color: #333;
+  margin-bottom: 40px;
+}
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto 30px;
+}
+.form-grid input, .form-grid select {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #aaa;
+  background: transparent;
+  outline: none;
+  font-size: 1rem;
+}
+.checkbox-group {
+  max-width: 900px;
+  margin: 20px auto;
+  text-align: left;
+  font-size: 0.9rem;
+  color: #333;
+}
+.checkbox-group input { margin-right: 8px; }
+.book-experience button {
+  background: #0a6ed1;
+  color: #fff;
+  padding: 12px 40px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.book-experience button:hover {
+  background: #004aad;
+}
+/* FOOTER */
+.bmw-footer {
+  background-color: #f8f8f8;
+  padding: 40px 8%;
+  color: #111;
+  line-height: 1.6;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-logo img {
+  width: 45px;
+}
+
+.footer-signup {
+  text-decoration: none;
+  font-weight: 600;
+  color: #000;
+}
+
+.footer-signup:hover {
+  color: #0a6ed1;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 40px;
+}
+
+.footer-column h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column li {
+  margin-bottom: 0.6rem;
+}
+
+.footer-column a {
+  text-decoration: none;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.footer-column a:hover {
+  color: #0a6ed1;
+}
+
+.social-icons {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons img {
+  width: 22px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  border-top: 1px solid #e5e5e5;
+  margin-top: 40px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-bottom-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+}
+
+.footer-bottom-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.footer-bottom-links a:hover {
+  color: #0a6ed1;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .footer-top,
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bmw-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bmw-header nav {
+    margin-top: 10px;
+  }
+
+  .carousel-track {
+    animation: none;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+}

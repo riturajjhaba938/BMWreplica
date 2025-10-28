@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BMW — All Models (CSS Tabs)</title>
+  <link rel="icon" href="https://res.cloudinary.com/dtqsbbz5r/image/upload/v1761483331/BMW_White_Logo.svg.asset.1670245093434_l76ymt.svg">
+  <link rel="stylesheet" href="models.css" />
+</head>
+<body>
+
+  <!--HEADER-->
+  <header>
+    <div class="brand">
+      <img src="https://res.cloudinary.com/dtqsbbz5r/image/upload/v1761483331/BMW_White_Logo.svg.asset.1670245093434_l76ymt.svg" alt="BMW Logo">
+      <div class="brand-name">BMW</div>
+    </div>
+
+    <nav class="main">
+      <a href="#">All Models</a>
+      <a href="#">Electric</a>
+      <a href="#">Visit Online Shop</a>
+    </nav>
+
+    <div class="icons">
+      <img src="https://res.cloudinary.com/dtqsbbz5r/image/upload/v1761494945/user_dxdjhn.png" alt="User Icon">
+      <img src="https://res.cloudinary.com/dtqsbbz5r/image/upload/v1761494945/trolley_svbljm.png" alt="Cart Icon">
+    </div>
+  </header>
+
+  <!--MAIN-->
+  <main class="container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="filters">
+        <h4>Categories</h4>
+        <div class="filter-group">
+          <div class="filter-pill">Full electric</div>
+          <div class="filter-pill">Plug-in hybrid</div>
+          <div class="filter-pill">Petrol</div>
+          <div class="filter-pill">Diesel</div>
+          <div class="filter-pill">Concept cars</div>
+        </div>
+
+        <h4>Price</h4>
+        <div class="filter-box">
+          <div class="range"></div>
+          <small>Rs. 30L — Rs. 2.0 Cr</small>
+        </div>
+
+        <h4>Body type</h4>
+        <div class="filter-group">
+          <div class="filter-pill">SUV</div>
+          <div class="filter-pill">Sedan</div>
+          <div class="filter-pill">Coupe</div>
+        </div>
+
+        <h4>Drive</h4>
+        <div class="filter-group">
+          <div class="filter-pill">AWD</div>
+          <div class="filter-pill">RWD</div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- MODELS PANEL -->
+    <section class="models-section">
+
+     
+      <input id="tab-electric" type="radio" name="tab" checked>
+      <input id="tab-plug"    type="radio" name="tab">
+      <input id="tab-petrol"  type="radio" name="tab">
+      <input id="tab-diesel"  type="radio" name="tab">
+      <input id="tab-concept" type="radio" name="tab">
+
+      <!-- labels (tabs) -->
+      <form class="tabs" aria-hidden="true">
+        <label for="tab-electric">Full Electric <span>(5)</span></label>
+        <label for="tab-plug">Plug-in Hybrid <span>(3)</span></label>
+        <label for="tab-petrol">Petrol <span>(12)</span></label>
+        <label for="tab-diesel">Diesel <span>(6)</span></label>
+        <label for="tab-concept">Concept Cars <span>(2)</span></label>
+      </form>
+
+      <!-- results header -->
+      <div class="results-bar">
+        <div class="results-left">Discover and configure all BMW models</div>
+        <div class="results-right">Sort by: Popular</div>
+      </div>
+
+      
+      <div class="tabs-content">
+
+        <!--FULL ELECTRIC-->
+        <div class="tab-panel panel-electric">
+          <div class="cards">
+            <article class="card animate">
+              <div class="card-figure">
+                <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-73317K9wt0u4fXB17wL3hqsVL2JeiHZIjAZX5IPGyvQFM%25lZyv4NHP0MA8fFA9%25UtXqCRix27d5y3w1p8ac1QT8RcmuMFS2I6uzVMRMusSkNh5Z4rVA0ogRcVNF4HvmU30Kc%252yG84WxfjTSUcP81D3VlxbUEqdbA89GsLzSbUiprJ8ysGw6ZuUciptYRSGxM67m5VpQhYCygN6nVmlTv0YzSyX324mllTQdjcy9R3azDxTi3dnkq83FYzOALU0bXkIFJG49OABKupcouFeWS6xHtKMPVY8%254WhbNmUfQPo90yGKObHi4TCao9%25wc3lsKiftxdXrLw178zQuvtECUkaSV7slGAna6CrXpFOhDlZQ6KIopXRaYWatLQ5nmPn7aagOybOwunvIT9IfrO2B3iBOcIjedweMHBDMztMj%25eqhk7hDGMLoACo4ghJHFlSIoou%25KXVG8HSfWQNuu%25V1PawtifNwDTjHBDcKkPPoxiEAGZI63VQedpRgvrxlMkJEPuqTMycSVNLB9gnYNUeHFbrUfNwEUnVI19mpzajeqKrPpw56swT7OY9hJPLzj1EoKG%25xyFnvz4UCStUDn2shKM4Kt2yUGCpLCzfNY" alt="BMW iX">
+              </div>
+              <div class="card-body">
+                <h3 class="model-title">iX</h3>
+                <p class="model-meta">SUV • Electric</p>
+                <p class="model-price">From Rs. 1,25,00,000</p>
+              </div>
+            </article>
+
+            <article class="card animate">
+              <div class="card-figure">
+                <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-73317K9wt0u4fXjFAeL3hqsVL2JeiHZIjAZX5IPGyvQFM%25lZyv4NHP0MA8fFA9%25UtXqCRix27d9ysw1p8ac1QT8RcmuMFS2I6uzVMRMuoSkNh5Z4rVA0ogRcoNF4Hv5xK0Kc%252y574WxfjTg9cP81D3VGxbUEqdtl89GsLzZjUiprJ849Gw6ZuUwWptYRSG0167m5VpFxYCygN6q3mlTv0Yz1yX324mblTQdjcy9R3azDxTA6dnkq8NnlzOALU0bnkIFJG4YWABKupcouFeWS6xHlKMPVY8AaWhbNmt2IPo90y710bHi4TCEF9%25wc3lC8iftxdXgDw178zQBltECUkg3o7slGAl9jCrXpFXillZQ6KQbqXRaYWao1Q5nmPnH4agOybOa0nvIT9IghO2B3iBvxIjedweVZBDMztLc0eqhk7J6HMLoACuqnhJHFlb4ZoubvYgMnvNk3FFe0P%25dxEaUmJCOy8sZR10tI3D%25Fq2YI6NLJujnWZXGucOMzK1coub%25cXJaHWp8TlgO2k1F8brUfbYiQGWBDFjTgH%25ekxh06FXRTVcwL9cvX5fBkIVk956cxw8jwOCGZ" alt="BMW iX1 LWB">
+              </div>
+              <div class="card-body">
+                <h3 class="model-title">iX1 LWB</h3>
+                <p class="model-meta">SUV • Electric</p>
+                <p class="model-price">From Rs. 46,00,000</p>
+              </div>
+            </article>
+
+            <article class="card animate">
+              <div class="card-figure">
+                <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-73317K9wt0u4fXr11cL3hqsVL2JeiHZIjAZX5IPGyvQFM%25lZyv4NHP0MA8fFA9%25UtXqCRix27d5QDw1p8ac1QT8RcmuMFS2I6uzVMRMXsSkNh5hQqVA0ogouXNF4HvH9H0Kc%252gKd4WxfjvCacP81D2WvxbUEqjp289GsLD6uUiprJkyYGw6ZuAwrptYRSFtx67m5VKzXYCygNWpVmlTv0P69yX324bDGTQdjcyNO3azDxTYQdnkq83n4zOALUd6%25kIFJGzXAABKupkHGFeWS6AX0KMPVYFx5WhbNmKMVPo90yGChbHi4TpEH9%25wc36sLiftxdYrUw178zm9utECUkaKH7slGAn59CrXpFOgSlZQ6KIvNXRaYWB4EQ5nmPeBTagOybMu0nvIT9h1SO2B3ioETIjedwSbRBDMztVlgeqhk7NpMMLoAC0XkhJHFlHEOou%25KX%25nIHSfWQfyz%25V1Pa18mfNEbnEIp10s9OsBFE4riIr0dscZwB81wrxRteUc%25Z857MGxvRUQVFSr%25V6wb77sYXg9TjHdK8efW3DLJ2YI1b4g7cNF1A6x8U0%25lLhzUyfriC2yRUQgyh8H5lk3PMSfNw273QqdvQFnozlE470PS5gswTZYA7hJPpyOxayVhuvEw1pwauAyTO30ObSJ2" alt="BMW i7">
+              </div>
+              <div class="card-body">
+                <h3 class="model-title">i7</h3>
+                <p class="model-meta">Sedan • Electric</p>
+                <p class="model-price">From Rs. 2,20,00,000</p>
+              </div>
+            </article>
+
+            <article class="card animate">
+              <div class="card-figure">
+                <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-73317K9wt0u4fX511ZL3hqsVL2JeiHZIjAZX5IPGyvQFM%25lZyv4NHP0MA8fFA9%25UtXqCRix27dfO5w1p8ac1Q1D1tVxbUEqjp289GsLD6sUiprJqYSGw6ZuLmGptYRSJyF67m5VKJXYCygNWU3mlTv0PGeyX324b8nTQdjc9sF3azDxiycdnkq8wT7zOALUtumkIFJG7ShABKupk9JFeWS6AUoKMPVYFzsWhbNmKkMPo90yWo7bHi4TPzR9%25wc3bkMiftxd9AVw178zihqtECUkwDH7slGAt5QCrXpF7vflZQ6KC2XXRaYWljMQ5nmPXDWagOybQk0nvIT9aMWO2B3invqIjedwO23BDMztIjjeqhk7BZuMLoACeRThJHFlM5hou%25KXh1IHSfWQtZu%25V1Pa7IsfNEbnCxb10s9Ol8vE4riIXU4scZwBQ1ArxRte2pfZ857Mj6ARUgChDYK5GvloqPdgp2XHLb9v6jQ%25J3r2YDafud2jmqn1SuIDyLOEVK9qTJIsN8WL3uBr0UIJdSeZWEYuzVMRPvySkNh5byyVA0og9QNNF4Hvifo0Kc%252w1e4WxfjtEYcP81D8VxxbUEqUuX89GsLGdFUiprJpSaGw6Zu6VfptYRSYwh67m5VmOPYCygNXUmmlTv0QheyX324alGTQdjcnXk3azDxOQ0dnkq8StmzOS7rt367ejgqqTMuAvHWpfZnxYR%25P9iKM4mgXAqQCrmseanOl6J9U1OoY32LKozOSAoUnpkJE%2558tYCjKq%25SbfFSrNG1JyXql5tkATjHdMsqUi5Bo0aVo7UwFyjmBjVwsoH0%25l0gtxO" alt="BMW i4">
+              </div>
+              <div class="card-body">
+                <h3 class="model-title">i4</h3>
+                <p class="model-meta">Coupe • Electric</p>
+                <p class="model-price">From Rs. 78,00,000</p>
+              </div>
+            </article>
+
+            <article class="card animate">
+              <div class="card-figure">
+                <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-73317K9wt0u4fXr1AtL3hqsVL2JeiHZIjAZX5IPGyvQFM%25lZyv4NHP0MA8fFA9%25UtXqCRix27d5M%25w1p8ac1QT8RcmuMFS2I6uzVMRr0sSkNh5Z4hVA0ogRcmNF4HvmRP0Kc%252yu84WxfjTWgcP81D30exbUEqdzk89GsLzZ6UiprJkReGw6ZuUTmptYRSGxO67m5Vp8tYCygN6C1mlTv0YxeyX324m8ZTQdjcyt33azDxT96dnkq83MbzOALUd7SkIFJGzPxABKupkbAFeWS6ABBKMPVYFXHWhbNmKQLPo90yWaPbHi4TPtA9%25wc36XHiftxdYACw178zmZBtECUkyiz7slGATwoCrXpFOgilZQ6KIvVXRaYWB20Q5nmPecJagOybMx8nvIT9hLZO2B3iohzIjedwHsNBDMzt%25rdeqhk7NigMLoAC0Q2hJHFl422ou%25KXcmHHSfWQxlT%25V1Pa89kfNEbnEh110s9Ose6E4riIrDuscZwBZMmrxRteRhPZ857M5xARUgChpE55Gvlo6kdgp2XHYGsv6jQ%25mpq2YDafy6ojmqn1exIDye8ix2Z8dQCnnvzBLlFSrWwmfRtKV04uzH5CpLn6Ui59dYmyGZI0EPyAR2XOuADyeLAEmrqIbK71xRUQunKeNWJeihsPIgpnG7xqLvQFjz9nE473AoYMA8EcJgQ53QMc9AFoKGoRI4u" alt="BMW i3">
+              </div>
+              <div class="card-body">
+                <h3 class="model-title">i3</h3>
+                <p class="model-meta">Hatch • Electric</p>
+                <p class="model-price">From Rs. 45,00,000</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- PLUG-IN HYBRID  -->
+        <div class="tab-panel panel-plug">
+          <div class="cards">
+            <article class="card animate">
+              <div class="card-figure">
+                <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-73317K9wt0u4fXB178L3hqsVL2JeiHZIjAZX5IPGyvQFM%25lZyv4NHP0MA8fFA9%25UtXqCRix27d5fsw1p8ac1QT8RcmuMFS2I6uzVMRMXsSkNh5hJlVA0ogobANF4Hv5Ad0Kc%252gF54WxfjvUgcP81D2G1xbUEqjpe89GsLzm6UiprJk4YGw6ZuAcnptYRSFXH67m5VKGPYCygNW2BmlTv0YGeyX324mplTQdjcyKf3azDxTGodnkq83flzOALUdh9kIFJGzCVABKupkVFFeWS6ANRKMPVYF0VWhbNmKwpPo90yWhNbHi4TPoo9%25wc3bOHiftxd9IVw178ziBwtECUkwXP7slGATOECrXpF3gplZQ6KdveXRaYWzCfQ5nmPej7agOybMD4nvIT9hqxO2B3ioUVIjedwHGpBDMzt%25SQeqhk7f%25FMLoAC1cGhJHFlE5xou%25KXsgJHSfWQxCD%25V1Pa8lffNEbnULL10s9OsoEE4riIrMYscZwBZqSrxRteRYBZ857M5oTRUgChgH95Gvlov30gp2XHYrvv6jQ%25mFk2YDafBcwjmBx9cvrx3X7aagdIqCAusKiY%25ZwFSN0JdoR7Gqap89Rb36YmUrON1WmkZvlnJkjmBqk1YsDOPFtfcZ8XJaFBVKLB9MEWO5GaUtcDqgXA2dba10tTkh6ekx14L5XRTXe4bkAhFUh7lAy" alt="BMW XM">
+              </div>
+              <div class="card-body">
+                <h3 class="model-title">XM</h3>
+                <p class="model-meta">SUV • PHEV</p>
+                <p class="model-price">From Rs. 2,45,00,000</p>
+              </div>
+            </article>
+
+            <article class="card animate">
+              <div class="card-figure">
+                <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-73317K9wt0u4fX51AtL3hqsVL2JeiHZIjAZX5IPGyvQFM%25lZyv4NHP0MA8fFA9%25UtXqCRix27d5Q1w1p8ac1QT8RcmuMFS2I6uzVMRMLCSkNh5hYCVA0ogRLwNF4Hv5Ad0Kc%252gF54WxfjvUgcP81D2G1xbUEqd2w89GsLz06UiprJk4RGw6ZuA8HptYRSFg667m5VKvoYCygN6UBmlTv0YGCyX324mXsTQdjcyUh3azDxTG5dnkq83iazOALUd1XkIFJGzoiABKupklNFeWS6ANRKMPVYFiGWhbNmKwWPo90yWahbHi4TPnu9%25wc3bO9iftxd9CKw178zmaftECUkyKX7slGAT5MCrXpF3tHlZQ6KIvwXRaYWB2NQ5nmPej4agOybMxunvIT9h8UO2B3ioJRIjedwHokBDMzt%2508eqhk7fZ4MLoAC0wAhJHFl422ou%25KXcmHHSfWQxbz%25V1Pa1MffNEbnEBL10s9Ose6E4riIrDuscZwBZ6IrxRteRhyZ857M5obRUgChg8F5Gvlov30gp2XHYrvv6jQ%25mFk2YDafBjNjmBx9cvrx3X7aagdIqCAusKiY%25ZwFSN0JdoR7Gqap89Rb36YmUrON1WmkZvlnJkjmBqk1YsDOPFtfcZ8XJaFBVKLB9MEWO5GaUtcDqgXA2dba10tTkh6ekx14L5XRTXe4bkAhFUh9q4u" alt="BMW M5 PHEV">
+              </div>
+              <div class="card-body">
+                <h3 class="model-title">M5 PHEV</h3>
+                <p class="model-meta">Sedan • PHEV</p>
+                <p class="model-price">From Rs. 2,10,00,000</p>
+              </div>
+            </article>
+
+            <article class="card animate">
+              <div class="card-figure">
+                <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-73317K9wt0u4fXBNRvL3huKrTRJeiPlsUgpn%25WNRw0Sk%250PqEiyrvep32sw7C9%25UbT79Kix2pd4WsyZOvdImvhjVB5xbZP%25F6Y8snGXMZSk%25CaDi2aKSAmxscCR2kgYrt35emjKZ8XxLv2jRCzfw4jSlnmdhSIjAZX5IPGyvQFM%25lZylB0PzkMA8MrnHYhJPNyYgQmZ7d2C7nvzEc1QtEDYGyyXq2FgXAXHhGrv6jQ%250Jq2YDaf4oTjmqn1cHCDyLOExguqTJIs8TfL3uBrUDlJdSeZGpXuzVMRpojSkNh56HlVA0ogS8cNF4HvVFp0Kc%252Nqe4Wxfj0XkcP81D4tmxbUEqcdx89GsLvS6UiprJ2CkGw6Zuj8JptYRS3ob67m5VdQ5YCygNza%25mlTv0k1wyX324AkDTQdjceF73azDxM07dnkq8hplzOALUollkIFJGHRAABKup%25VjFeWS6hB3KMPVYoe9WhbNmHMgPo90y%25h6" alt="5 Series PHEV">
+              </div>
+              <div class="card-body">
+                <h3 class="model-title">5 Series PHEV</h3>
+                <p class="model-meta">Sedan • PHEV</p>
+                <p class="model-price">From Rs. 1,05,00,000</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!--PETROL-->
+        <div class="tab-panel panel-petrol">
+          <div class="cards">
+            <article class="card animate">
+              <div class="card-figure">
+                <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-73317K9wt0u4fXBF1EL3hqsVL2JeiHZIjAZX5IPGyvQFM%25lZyv4NHP0MA8fFA9%25UtXqCRix27dh2sw1p8ac1QT8RcmuMFS2I6uzVMRMXDSkNh5hQSVA0ogou5NF4HvHtR0Kc%252g584WxfjvLKcP81D2pLxbUEqjP289GsLD6jUiprJqYUGw6ZuATWptYRSFxy67m5VK8IYCygNWU7mlTv0PlgyX324bOeTQdjc9Is3azDxiycdnkq8wT7zOALUtoskIFJG7SxABKupk9JFeWS6AUuKMPVYFGeWhbNmKkrPo90yWAhbHi4TPzR9%25wc3bkEiftxd9AVw178zijotECUkwRX7slGAtgICrXpF7CAlZQ6KCO%25XRaYWlZZQ5nmPX%25aagOybQfKnvIT9a1nO2B3iKHvIjedwWChBDMztPuzeqhk7bSEMLoAC9VRhJHFliemou%25KXs5JHSfWQr4W%25V1PaZcMfNEbnRx310s9O599E4riIgkYscZwBvAFrxRte2vCZ857MjTkRUgChDS35GvloqVUgp2XH3Lsv6jQ%25dhx2YDafzojjmqn1ki3DyLOELgKqTJIsJvLL3uBru5PJdSeZSUYuzVMRVPZSkNh5NSCVA0og0k8NF4HvWJ00Kc%252Pl74WxfjbIUcP81DZddxbZzId4uzw%25h110trUol6JQBPjSeXYyTptvVhFU1KkIVOwWPbAusyqabCS4HEpCxbZUCqPJ8snXMDdSk%25p1XZmQGZI5LasNF1AMd8U0%25lctO1qTMiCgWRCzq3GN%25Vi%25R3OClgXAghxGn" alt="BMW X7">
+              </div>
+              <div class="card-body">
+                <h3 class="model-title">X7</h3>
+                <p class="model-meta">SUV • Petrol</p>
+                <p class="model-price">From Rs. 1,35,00,000</p>
+              </div>
+            </article>
+
+            <article class="card animate">
+              <div class="card-figure">
+                <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-73317K9wt0u4fXBF1TL3hqsVL2JeiHZIjAZX5IPGyvQFM%25lZyv4NHP0MA8fFA9%25UtXqCRix27dh2sw1p8ac1QT8RcmuMFS2I6uzVMRMXDSkNh5hQSVA0ogou5NF4HvHIU0Kc%252g584WxfjvLccP81D2JWxbUEqjPF89GsLDbjUiprJqYDGw6ZuLmGptYRSF3P67m5VK8TYCygNWU7mlTv0PnByX324bOETQdjc90h3azDxiL0dnkq83WFzOALUdcqkIFJGzTfABKupk3IFeWS6AyoKMPVYFZOWhbNmK1CPo90yWsPbHi4TP7Y9%25wc3bHHiftxd9Iiw178zmaftECUkyRU7slGAT5ICrXpF3ghlZQ6Kd70XRaYWBoZQ5nmPejmagOybMDCnvIT9hqxO2B3io33IjedwHGNBDMzt%25p6eqhk7f%25FMLoAC1cGhJHFlE5fou%25KXcsIHSfWQfeU%25V1Pa1MffNEbnEBp10s9OsjJE4riIrpOscZwBZsdrxRteRc2Z857MG1RRUgChpz35Gvlo6Pjgp2XHO3nv6O4P05E4yCwXXRTnjtzL1Abpos9kJSVqTMrw8jXUcPrWyGp6xEaS%25F6ds57Qqdv6Ojd%25p12aKkiH0scCqXkOuADOPBfFaZ8Xxi02jRCzgTWX%25VimdeGId4%25NDZCrmCINWdzekxesql9" alt="BMW X5">
+              </div>
+              <div class="card-body">
+                <h3 class="model-title">X5</h3>
+                <p class="model-meta">SUV • Petrol</p>
+                <p class="model-price">From Rs. 1,25,00,000</p>
+              </div>
+            </article>
+             <article class="card animate">
+              <div class="card-figure">
+                <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-73317K9wt0u4fXmFLiL3hqsVL2JeiHZIjAZX5IPGyvQFM%25lZyv4NHP0MA8fFA9%25UtXqCRix27d5LDw1p8ac1QT8RcmuMFS2I6uzVMRMXDSkNh5hJRVA0ogRZcNF4Hv5Jt0Kc%252gFu4WxfjvUgcP81D2GmxbUEqdYA89GsLz06UiprJk4RGw6ZuAwrptYRSFU%2567m5VKD6YCygN6z3mlTv0YSgyX324mpMTQdjcy6X3azDxTardnkq83pHzOALUd6vkIFJGzXAABKupk7TFeWS6ACBKMPVYFf7WhbNmKwWPo90yWhhbHi4TPnb9%25wc36%25MiftxdYQ%25w178zmFltECUkyRv7slGATwoCrXpFOMslZQ6KIv6XRaYWB2tQ5nmPec2agOybMe3nvIT9hS4O2B3ioEVIjedwSbRBDMztV55eqhk7NpMMLoAC0tYhJHFlHIxou%25KX%25BHHSfWQfOD%25V1Pa1IGfNEbnE2310s9Os88E4riIrpOscZwBZsdrxRteRhPZ857M5xjRUgChpz35Gvlo6UEgp2XHYGDv6jQ%25mpW2YDafBjEjmBx9cvrx3X7aagdIqCAusKiY%25ZwFSN0JdoR7Gqap89Rb36YmUrON1WmkZvlnJkjmBqk1YsDOPFtfcZ8XJaFBVKLB9MEWO5GaUtcDqgXA2dba10tTkh6ekx14L5XRTXe4bkAhFUhZOoW" alt="BMW X3">
+              </div>
+              <div class="card-body">
+                <h3 class="model-title">X3</h3>
+                <p class="model-meta">SUV • Petrol</p>
+                <p class="model-price">From Rs. 7,120,000</p>
+              </div>
+            </article>
+
+             <article class="card animate">
+              <div class="card-figure">
+                <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-73317K9wt0u4fX7F1vL3hqsVL2JeiHZIjAZX5IPGyvQFM%25lZyv4NHP0MA8fFA9%25UtXqCRix27d5few1p8ac1QT8RcmuMFS2I6uzVMRMLZSkNh5hSHVA0ogRZcNF4Hv5J00Kc%252gFa4WxfjvUgcP81D2GbxbUEqdYA89GsLzjtUiprJk4YGw6ZuAloptYRSFgR67m5VpdTYCygN6U7mlTv0YliyX324mXGTQdjcyUR3azDxT96dnkq83MWzOALUdo9kIFJGzP5ABKupcBaFeWS6xwBKMPVY8T9WhbNmUfNPo90yGKmbHi4TCDe9%25wc3lsciftxdXrWw178zQZJtECUkaQp7slGAnMQCrXpF2z%25lZQ6KjffXRaYWD0QQ5nmPqKfagOybOCunvIT9IlOO2B3iB7ZIjedweCNBDMztMs5eqhk7hNtMLoACoMGhJHFlH%25Eou%25KX%25JsHSfWQfum%25V1Pa06GfNEbn4dr10s9OcNhE4riIx0RscZwBlJErxlukJEouG9Www1pCRPmvhTAcIHFy2Dqgpn%25WNRw0Sk%25zG4cxVo7De3xYHEbtgYrxlRYechZ7dyKBJHS9gwyljT5lkQM37fNwVKJZR19mspzweqKUYa4XYueL5f9%25U9XLzYmayVaHIx3" alt="BMW X1">
+              </div>
+              <div class="card-body">
+                <h3 class="model-title">X1</h3>
+                <p class="model-meta">Coupe • Petrol</p>
+                <p class="model-price">From Rs. 5,060,000</p>
+              </div>
+            </article>
+             <article class="card animate">
+              <div class="card-figure">
+                <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-73317K9wt0u4fXBF1ZL3hqsVL2JeiHZIjAZX5IPGyvQFM%25lZyv4NHP0MA8fFA9%25UtXqCRix27d9ysw1p8ac1QT8RcmuMFS2I6uzVMRMXDSkNh5hQSVA0ogou5NF4HvH9B0Kc%252g584WxfjvKgcP81D2GvxbUEqjpx89GsLzmFUiprJkD7Gw6ZuAcmptYRSFxO67m5VK7RYCygNWkQmlTv0PxayX324bEATQdjc9m43azDxiytdnkq8wJYzOALUdPKkIFJGzxMABKupk31FeWS6AdBKMPVYFMwWhbNmK3rPo90yWdBbHi4TPzu9%25wc3bejiftxd92hw178ziZltECUkw5H7slGAtgCCrXpF7vBlZQ6KC2FXRaYWldVQ5nmPXBFagOybQ5jnvIT9agyO2B3invvIjedwOsIBDMztPfjeqhk7bXHMLoAC9VAhJHFliNrou%25KXw0gHSfWQthT%25V1PaZcPfNEbnRxh10s9O58dE4riIgkYscZwBvAFrxRte26%25Z857MjYZRUgChDjX5GvloqdFgp2XHLNzv6jQ%25J0X2YDafzo8jmqn1kiDDyLOEABnqTJIsJvWL3uBru2JJdSeZSgYuzVMRVv9SkNh5NpyVA0og095NF4Hv4NX0Kc%252cxG4WxfjxKpcP81D8WOxbUEqiaX89GsLwM6UiprJt90Gw6Zu7imptYRS2KH672WoKG4WXr1RRUQvmEO30BHtuc%25IdkATQLx19mRiPoxhXwt7b4gkVe7ncGs5Tn672mnVt0YgMIfSKcPrTRI2zBy2oDNeg89RbfKYmUrOpQhRVAflnqwjnWVFy8rxlrjFhnOqIbq1KyM" alt="7 series">
+              </div>
+              <div class="card-body">
+                <h3 class="model-title">7 Series</h3>
+                <p class="model-meta">Sedan • Petrol</p>
+                <p class="model-price">From Rs. 17,945,000</p>
+              </div>
+            </article>
+
+             <article class="card animate">
+              <div class="card-figure">
+                <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-73317K9wt0u4fXBFAEL3hqsVL2JeiHZIjAZX5IPGyvQFM%25lZyv4NHP0MA8fFA9%25UtXqCRix27d9ysw1p8ac1QT8RcmuMFS2I6uzVMRMXDSkNh5hJRVA0ogRZcNF4Hv5AJ0Kc%252g854WxfjTpzcP81D3vixbUEqdNp89GsLz0ZUiprJkirGw6ZuAodptYRSFUW67m5VKWtYCygNW2umlTv0YkdyX324mpMTQdjcy6X3azDxTaUdnkq83pHzOALUd6ekIFJGzY2ABKupkoPFeWS6A%25tKMPVYFiGWhbNmKwWPo90yWhhbHi4TPnb9%25wc36XHiftxdYACw178zmZntECUkyRe7slGATwVCrXpFOgplZQ6KIvwXRaYWB20Q5nmPecJagOybMx8nvIT9hLZO2B3iohzIjedwHNxBDMzt%25roeqhk7NigMLoACoOchJHFlHIoou%25KX%25n8HSfWQfgD%25V1Pa18QfNEbnEfy10s9Osr5E4riIr0gscZwBZ4zrxRteU3yZ857MGxfRUgChabX5GaNKVZfNYt9CCrmQvi3D%25zWUM1PdqJujmBE9cvCx0KEFY8UG4fXJokGT1ZwljT5GavToU%25gXAdbhV10tjCdaLz2aKOHkXscC4bVgvrt3RmFCoub6TI8nTNoS2stE6tnSFT3Id4I1XBi" alt="BMW 5 lwb">
+              </div>
+              <div class="card-body">
+                <h3 class="model-title">5 LWB</h3>
+                <p class="model-meta">Sedan • Petrol</p>
+                <p class="model-price">From Rs. 7,235,000</p>
+              </div>
+            </article>
+            <article class="card animate">
+              <div class="card-figure">
+                <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-73317K9wt0u4fXu1otL3hqsVL2JeiHZIjAZX5IPGyvQFM%25lZyv4NHP0MA8fFA9%25UtXqCRix27d5Q1w1p8ac1Q1D7shxbUEqjPF89GsLxFUUiprJpSaGw6ZuUInptYRSGBb67m5V5%25JYCygN6PjmlTv0VCSyX324apTTQdjcybX3azDxVycdnkq8khxzOALUdOlkIFJGzIyABKupcmPFeWS6ibUKMPVY8tOWhbNmU7MPo90yWAhbHi4TPzu9%25wc3bO9iftxdXO%25w178zBPltECUkCva7slGAnVjCrXpF3gplZQ6KQDFXRaYWguLQ5nmPnK4agOybMDcnvIT9PdhO2B3iu8IIjedwWj5BDMztPuZeqhk7bSEMLoAC1YmhJHFlHR2ou%25KXcjjHSfWQrvU%25V1PaZr9fNEbnUXr10s9OaZQE4riIreKscZwBO5zrxRteRfZZ857M7sARUgChg%2535Gvloqmsgp2XHLyWv6jQ%25jEx2YDafuAPjmqn1qY9Dye8ix2Z8dQCnnvzBLlFSrWwmfRtKV04uzH5CpLn6Ui59dYmyGZI0EPyAR2XOuADyeLAEmrqIbK71xRUQunKeNWJeihsPIgpnG7xqLvQFjz9nE473AoYMA8EcJgQ53QMc9AFoKGoiLvH" alt="BMW M4">
+              </div>
+              <div class="card-body">
+                <h3 class="model-title">M4</h3>
+                <p class="model-meta">Coupe • Petrol</p>
+                <p class="model-price">From Rs. 98,00,000</p>
+              </div>
+            </article>
+            <article class="card animate">
+              <div class="card-figure">
+                <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-73317K9wt0u4fXr1otL3hqsVL2JeiHZIjAZX5IPGyvQFM%25lZyv4NHP0MA8fFA9%25UtXqCRix27dfAxw1p8ac1QT8RcLV4j%25AvZf68yCrXpFpNzlZQ6K67VXRaYWY%258Q5nmPmTFagOyby3EnvIT9PvrO2B3ibVcIjedw925BDMztio9eqhk7wHGMLoACR1%25hJHFl5tVou%25KXgB1HSfWQvbK%25V1Pa295fNEbn%25hV10s9Of0JE4riI14oscZwBEhWrxRtesLtZ857MrdTRUgChZz45GvloRNagp2XH5aXv6jQ%25gLZ2YDafMu6jmqn1hmGDyLOEoNpqTJIsH0yL3uBr%255VJdSeZfFeuzVMR1KpSkNh5EWYVA0ogsulNF4HvUDd0Kc%252GmF4WxfjpiScP81D6wOxbUEqYtB89GsLmMKUiprJyhoGw6ZuTy5ptYRS3OM67m5VdKIYCygNz3umlTv0kBHyX324BA%25TQdjceNj3azDxM77dnkq8hrzzOALUouykIFJGFbyABKupKmTFeWS6WgDKMPVYP15WhbNmbTLPoxn2aKdnfSLNNF1cMQSUMHKix2udTQMGjvRUQvmEO30BHtuc%25IdkATQLx19mRiPoxhXwt7b4gkVe7ncGs5Tn672mnVt0YgMIfSKcPrTRI2zBy2oDNeg89RbfKYmUrOpQhRVAflnqwjnWVFy8rxlrjFhnOqIbq38kK" alt="BMW M4 cs">
+              </div>
+              <div class="card-body">
+                <h3 class="model-title">M4 CS</h3>
+                <p class="model-meta">Coupe • Petrol</p>
+                <p class="model-price">From Rs. 17,880,000</p>
+              </div>
+            </article>
+
+            <article class="card animate">
+              <div class="card-figure">
+                <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-73317K9wt0u4fXBFAZL3hqsVL2JeiHZIjAZX5IPGyvQFM%25lZyv4NHP0MA8fFA9%25UtXqCRix27d5Qqw1p8ac1QT8RcmuMFS2I6uzVMRMLZSkNh5hvTVA0ogRjkNF4Hv5AR0Kc%252g854WxfjTpzcP81D3vixbUEqdNp89GsLzZjUiprJ8yYGw6ZuUcnptYRSGxw67m5Vp7bYCygN6C8mlTv0YxryX324moMTQdjcyTw3azDxTFrdnkq83wCzOALUdtzkIFJG4bOABKupcBaFeWS6xwnKMPVY8teWhbNmU3iPo90yG10bHi4TpEn9%25wc36PBiftxdXO%25w178zQZ8tECUkaRb7slGAn5SCrXpFONDlZQ6KI04XRaYWBIyQ5nmPe%25IagOybMBKnvIT9huTO2B3iuPZIjedwSbBBDMztM9eeqhk7hn4MLoACoOhhJHFlHa2ou%25KX%25n8HSfWQfgD%25V1Pa1XTfNEbnEUa10s9Os1TE4riIrZgscZwBZ4vrxRteRckZ857MGdTRUgChpW25GvlongCgpn0WNR10m7illZya2wdqfkPGhEbzLuSDyesix2l84WsKmUGpc1QuHAp3ERtXD3gpn23HGfvQFz9oNE47DlznJkjnWI%25AQrxlc9Nv2Z7d5yKlHS9Y3BUO30HVjr7sY7OVK3dBzcB4g0F" alt="BMW 3 LWB">
+              </div>
+              <div class="card-body">
+                <h3 class="model-title">3 LWB</h3>
+                <p class="model-meta">Sedan • Petrol</p>
+                <p class="model-price">From Rs. 60,45,000</p>
+              </div>
+            </article>
+
+            <article class="card animate">
+              <div class="card-figure">
+                <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-73317K9wt0u4fXB1jEL3hqsVL2JeiHZIjAZX5IPGyvQFM%25lZyv4NHP0MA8fFA9%25UtXqCRix27d5Quw1p8ac1QT8RcmuMFS2I6uzVMRBDMztzOUeqhk7kwuMLoACAKwhJHFl7WEou%25KXCJDHSfWQluC%25V1PaXslfNEbnQrb10s9OaZ3E4riIqHRscZwBE%25mrxRtesfcZ857Mr8NRUgChZU15GvloRGFgp2XH51wv6jQ%25gx22YDafv06jmqn12WFDyLOEj8eqTJIsDqGL3hGtUD5GknXIIjAMuQWNRb7TEgCP0cxVAfvXYuImptvwkyT365ecr93KgDaBVKL3huKrTRJeiPlsUgpnVIPh4bShtHZ9e2YI6lUJujnWqAwIrxlzK%25yoKGr8S2nvzno8wKW%25P6%25pL%25G" alt="BMW M4">
+              </div>
+              <div class="card-body">
+                <h3 class="model-title">M2</h3>
+                <p class="model-meta">Coupe • Petrol</p>
+                <p class="model-price">From Rs. 10,025,000</p>
+              </div>
+            </article>
+
+            <article class="card animate">
+              <div class="card-figure">
+                <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331tjix2Ot6iaFSoKTLXFeWS6SkpKMPVYVxWWhbNm6piPo90yYAbbHi4TmoF9%25wc3y7miftxdTC1w178zBQhtECUkebX7slGAM96CrXpFhrGlZQ6Kov0XRaYWlBOQ5nmPX7RagOybQgsnvIT9avCO2B3in22IjedwOCYBDMztIsQeqhk7B%25eMLoAC9L2hJHFlisLou%25KXwn1HSfWQt4W%25V1Pa7c2fNEbnCHa10s9O5duE4riIgUiscZwBvG%25rxRte2vCZ857MjTkRUgChDS25GvloTe4gp2XH3ccv6jQ%25db22YDafzHcjmqn1q5FDyLOELgqqTJIsJRpL3uBru5PJdSeZSUCuzVMRVKKSkNh5NbRVA0og0VlNF4Hv4jB0Kc%252cFG4WxfjxKncP81D9QlxbUEqiPV89GsLwb6UiprJgXFGwglHhFVozL1WJL0KEFhzUG4fXx7IEL3huKrTRJeiPlsUgpnjJPqdvQFD%250Jx2YI1b4g7cNF1XOLtDOPNKTUZ8XrevZ1RCzahtE6tnSFT3Id4I1MkJBDFRQgBbpT2aKhfXRTmcG6Ys%25rt3m4guoub5imC2yRCzXeTt%25ViExM7GqlOKvJICpYmUi5AekxVA71HsscC4D5gvrt3H9NvJ7Q6TeJ" alt="BMW M4">
+              </div>
+              <div class="card-body">
+                <h3 class="model-title">2 Series</h3>
+                <p class="model-meta">Models • Petrol</p>
+                <p class="model-price">From Rs. 4,530,000</p>
+              </div>
+            </article>
+
+             <article class="card animate">
+              <div class="card-figure">
+                <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-73317K9wt0u4fXiYRgL3hqsVL2JeiHZIjAZX5IPGyvQFM%25lZyv4NHP0MA8fFA9%25UtXqCRix27d5Asw1p8ac1QT8RcmuMFS2I6uzVMRMceSkNh5hrlVA0ogoZQNF4HvHJt0Kc%252%25uz4WxfjfSKcP81D1VhxbUEqEbp89GsLsyEUiprJrV0Gw6ZuZNnptYRSR0667m5V54RYCygNg98mlTv0vieyX3242wtTQdjcjm13azDxDRBdnkq8cWHzOALUxP%25kIFJG8xOABKupU8IFeWS6GdQKMPVYpzaWhbNm6hOPo90yYCcbHi4Tmlx9%25wc3yCziftxdT%25hw178z3fTtECUkdXJ7slGAMeUCrXpF7r9lZQ6KCfXXRaYWluLQ5nmPXjcagOybQLcnvIT9FhZO2B3iKovIjedwWbRBDMztPDgeqhk7b1vMLoAC9EqhJHFli2xou%25KXssdHSfWQrrC%25V1PaZZQfNEbnRXM10s9O5QuE4riIga3scZwBvnurxRte2xhZ857MjDvRUgChDqM5GvloqLhgp2XHL1xv6jQ%25JE92YDafu8Ljmqn1SUFDyLOEVw5qTJIsNtzL3uBr07kJdSeZ4CBuzVMRcwmSkNh5bryVA0og9ZqNF4HviR00Kc%252w544WxfjtSUcP81D7PxxbUEqCbI89GsLlFFUiprJXKKGw6ZuQhiptYRSY3n67m5Vm8KYCygNyklmlTv0TAYyX32438GTQdjcdU33azDxzG1dnkq8kCFzOALUAl%25kIFJGFXxABKupK5TFeWS6WgpKMPVYPvjWhbNmb2sPo90y%257kbHi4TfYO9%25wc31KqiftxdEQ%25w178zsa1tE6MJeiKMZcN889RpC0vQFju1dWS2aOIXRTPNHC8%25hJPLZf1EoKGOkDEgWi4UXgtE6Cgk1F7Gq2VzeWhcX826njl6JmADGbH8oVe7C9cvwRL8kIVrgyfYgMkBlbcPrcYBLgvy2oyhtNO" alt="BMW M4">
+              </div>
+              <div class="card-body">
+                <h3 class="model-title">Z4</h3>
+                <p class="model-meta">M Model • Petrol</p>
+                <p class="model-price">From Rs. 10,025,000</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!--DIESEL-->
+        <div class="tab-panel panel-diesel">
+          <div class="cards">
+            <article class="card animate">
+              <div class="card-figure">
+                <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-73317K9wt0u4fXBF1EL3hqsVL2JeiHZIjAZX5IPGyvQFM%25lZyv4NHP0MA8fFA9%25UtXqCRix27dh2sw1p8ac1QT8RcmuMFS2I6uzVMRMXDSkNh5hQSVA0ogou5NF4HvHtR0Kc%252g584WxfjvLKcP81D2pLxbUEqjP289GsLD6jUiprJqYUGw6ZuATWptYRSFxy67m5VK8IYCygNWU7mlTv0PlgyX324bOeTQdjc9Is3azDxiycdnkq8wT7zOALUtoskIFJG7SxABKupk9JFeWS6AUuKMPVYFGeWhbNmKkrPo90yWAhbHi4TPzR9%25wc3bkEiftxd9AVw178zijotECUkwRX7slGAtgICrXpF7CAlZQ6KCO%25XRaYWlZZQ5nmPX%25aagOybQfKnvIT9a1nO2B3iKHvIjedwWChBDMztPuzeqhk7bSEMLoAC9VRhJHFliemou%25KXs5JHSfWQr4W%25V1PaZcMfNEbnRx310s9O599E4riIgkYscZwBvAFrxRte2vCZ857MjTkRUgChDS35GvloqVUgp2XH3Lsv6jQ%25dhx2YDafzojjmqn1ki3DyLOELgKqTJIsJvLL3uBru5PJdSeZSUYuzVMRVPZSkNh5NSCVA0og0k8NF4HvWJ00Kc%252Pl74WxfjbIUcP81DZddxbZzId4uzw%25h110trUol6JQBPjSeXYyTptvVhFU1KkIVOwWPbAusyqabCS4HEpCxbZUCqPJ8snXMDdSk%25p1XZmQGZI5LasNF1AMd8U0%25lctO1qTMiCgWRCzq3GN%25Vi%25R3OClgXAghxGn" alt="BMW X7">
+              </div>
+              <div class="card-body">
+                <h3 class="model-title">X7</h3>
+                <p class="model-meta">SUV • Disel</p>
+                <p class="model-price">From Rs. 1,35,00,000</p>
+              </div>
+            </article>
+
+            <article class="card animate">
+              <div class="card-figure">
+                <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-73317K9wt0u4fXBF1TL3hqsVL2JeiHZIjAZX5IPGyvQFM%25lZyv4NHP0MA8fFA9%25UtXqCRix27dh2sw1p8ac1QT8RcmuMFS2I6uzVMRMXDSkNh5hQSVA0ogou5NF4HvHIU0Kc%252g584WxfjvLccP81D2JWxbUEqjPF89GsLDbjUiprJqYDGw6ZuLmGptYRSF3P67m5VK8TYCygNWU7mlTv0PnByX324bOETQdjc90h3azDxiL0dnkq83WFzOALUdcqkIFJGzTfABKupk3IFeWS6AyoKMPVYFZOWhbNmK1CPo90yWsPbHi4TP7Y9%25wc3bHHiftxd9Iiw178zmaftECUkyRU7slGAT5ICrXpF3ghlZQ6Kd70XRaYWBoZQ5nmPejmagOybMDCnvIT9hqxO2B3io33IjedwHGNBDMzt%25p6eqhk7f%25FMLoAC1cGhJHFlE5fou%25KXcsIHSfWQfeU%25V1Pa1MffNEbnEBp10s9OsjJE4riIrpOscZwBZsdrxRteRc2Z857MG1RRUgChpz35Gvlo6Pjgp2XHO3nv6O4P05E4yCwXXRTnjtzL1Abpos9kJSVqTMrw8jXUcPrWyGp6xEaS%25F6ds57Qqdv6Ojd%25p12aKkiH0scCqXkOuADOPBfFaZ8Xxi02jRCzgTWX%25VimdeGId4%25NDZCrmCINWdzekxesql9" alt="BMW X5">
+              </div>
+              <div class="card-body">
+                <h3 class="model-title">X5</h3>
+                <p class="model-meta">SUV • Disel</p>
+                <p class="model-price">From Rs. 1,25,00,000</p>
+              </div>
+            </article>
+
+            <article class="card animate">
+              <div class="card-figure">
+                <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-73317K9wt0u4fXmFLiL3hqsVL2JeiHZIjAZX5IPGyvQFM%25lZyv4NHP0MA8fFA9%25UtXqCRix27d5LDw1p8ac1QT8RcmuMFS2I6uzVMRMXDSkNh5hJRVA0ogRZcNF4Hv5Jt0Kc%252gFu4WxfjvUgcP81D2GmxbUEqdYA89GsLz06UiprJk4RGw6ZuAwrptYRSFU%2567m5VKD6YCygN6z3mlTv0YSgyX324mpMTQdjcy6X3azDxTardnkq83pHzOALUd6vkIFJGzXAABKupk7TFeWS6ACBKMPVYFf7WhbNmKwWPo90yWhhbHi4TPnb9%25wc36%25MiftxdYQ%25w178zmFltECUkyRv7slGATwoCrXpFOMslZQ6KIv6XRaYWB2tQ5nmPec2agOybMe3nvIT9hS4O2B3ioEVIjedwSbRBDMztV55eqhk7NpMMLoAC0tYhJHFlHIxou%25KX%25BHHSfWQfOD%25V1Pa1IGfNEbnE2310s9Os88E4riIrpOscZwBZsdrxRteRhPZ857M5xjRUgChpz35Gvlo6UEgp2XHYGDv6jQ%25mpW2YDafBjEjmBx9cvrx3X7aagdIqCAusKiY%25ZwFSN0JdoR7Gqap89Rb36YmUrON1WmkZvlnJkjmBqk1YsDOPFtfcZ8XJaFBVKLB9MEWO5GaUtcDqgXA2dba10tTkh6ekx14L5XRTXe4bkAhFUhZOoW" alt="BMW X3">
+              </div>
+              <div class="card-body">
+                <h3 class="model-title">X3</h3>
+                <p class="model-meta">SUV • Disel</p>
+                <p class="model-price">From Rs. 7,120,000</p>
+              </div>
+            </article>
+
+              <article class="card animate">
+              <div class="card-figure">
+                <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-73317K9wt0u4fX7F1vL3hqsVL2JeiHZIjAZX5IPGyvQFM%25lZyv4NHP0MA8fFA9%25UtXqCRix27d5few1p8ac1QT8RcmuMFS2I6uzVMRMLZSkNh5hSHVA0ogRZcNF4Hv5J00Kc%252gFa4WxfjvUgcP81D2GbxbUEqdYA89GsLzjtUiprJk4YGw6ZuAloptYRSFgR67m5VpdTYCygN6U7mlTv0YliyX324mXGTQdjcyUR3azDxT96dnkq83MWzOALUdo9kIFJGzP5ABKupcBaFeWS6xwBKMPVY8T9WhbNmUfNPo90yGKmbHi4TCDe9%25wc3lsciftxdXrWw178zQZJtECUkaQp7slGAnMQCrXpF2z%25lZQ6KjffXRaYWD0QQ5nmPqKfagOybOCunvIT9IlOO2B3iB7ZIjedweCNBDMztMs5eqhk7hNtMLoACoMGhJHFlH%25Eou%25KX%25JsHSfWQfum%25V1Pa06GfNEbn4dr10s9OcNhE4riIx0RscZwBlJErxlukJEouG9Www1pCRPmvhTAcIHFy2Dqgpn%25WNRw0Sk%25zG4cxVo7De3xYHEbtgYrxlRYechZ7dyKBJHS9gwyljT5lkQM37fNwVKJZR19mspzweqKUYa4XYueL5f9%25U9XLzYmayVaHIx3" alt="BMW X1">
+              </div>
+              <div class="card-body">
+                <h3 class="model-title">X1</h3>
+                <p class="model-meta">Coupe • Disel</p>
+                <p class="model-price">From Rs. 5,060,000</p>
+              </div>
+            </article>
+
+            <article class="card animate">
+              <div class="card-figure">
+                <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-73317K9wt0u4fXBF1ZL3hqsVL2JeiHZIjAZX5IPGyvQFM%25lZyv4NHP0MA8fFA9%25UtXqCRix27d9ysw1p8ac1QT8RcmuMFS2I6uzVMRMXDSkNh5hQSVA0ogou5NF4HvH9B0Kc%252g584WxfjvKgcP81D2GvxbUEqjpx89GsLzmFUiprJkD7Gw6ZuAcmptYRSFxO67m5VK7RYCygNWkQmlTv0PxayX324bEATQdjc9m43azDxiytdnkq8wJYzOALUdPKkIFJGzxMABKupk31FeWS6AdBKMPVYFMwWhbNmK3rPo90yWdBbHi4TPzu9%25wc3bejiftxd92hw178ziZltECUkw5H7slGAtgCCrXpF7vBlZQ6KC2FXRaYWldVQ5nmPXBFagOybQ5jnvIT9agyO2B3invvIjedwOsIBDMztPfjeqhk7bXHMLoAC9VAhJHFliNrou%25KXw0gHSfWQthT%25V1PaZcPfNEbnRxh10s9O58dE4riIgkYscZwBvAFrxRte26%25Z857MjYZRUgChDjX5GvloqdFgp2XHLNzv6jQ%25J0X2YDafzo8jmqn1kiDDyLOEABnqTJIsJvWL3uBru2JJdSeZSgYuzVMRVv9SkNh5NpyVA0og095NF4Hv4NX0Kc%252cxG4WxfjxKpcP81D8WOxbUEqiaX89GsLwM6UiprJt90Gw6Zu7imptYRS2KH672WoKG4WXr1RRUQvmEO30BHtuc%25IdkATQLx19mRiPoxhXwt7b4gkVe7ncGs5Tn672mnVt0YgMIfSKcPrTRI2zBy2oDNeg89RbfKYmUrOpQhRVAflnqwjnWVFy8rxlrjFhnOqIbq1KyM" alt="7 series">
+              </div>
+              <div class="card-body">
+                <h3 class="model-title">7 Series</h3>
+                <p class="model-meta">Sedan • Disel</p>
+                <p class="model-price">From Rs. 17,945,000</p>
+              </div>
+            </article>
+
+            <article class="card animate">
+              <div class="card-figure">
+                <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-73317K9wt0u4fXBFAZL3hqsVL2JeiHZIjAZX5IPGyvQFM%25lZyv4NHP0MA8fFA9%25UtXqCRix27d5Qqw1p8ac1QT8RcmuMFS2I6uzVMRMLZSkNh5hvTVA0ogRjkNF4Hv5AR0Kc%252g854WxfjTpzcP81D3vixbUEqdNp89GsLzZjUiprJ8yYGw6ZuUcnptYRSGxw67m5Vp7bYCygN6C8mlTv0YxryX324moMTQdjcyTw3azDxTFrdnkq83wCzOALUdtzkIFJG4bOABKupcBaFeWS6xwnKMPVY8teWhbNmU3iPo90yG10bHi4TpEn9%25wc36PBiftxdXO%25w178zQZ8tECUkaRb7slGAn5SCrXpFONDlZQ6KI04XRaYWBIyQ5nmPe%25IagOybMBKnvIT9huTO2B3iuPZIjedwSbBBDMztM9eeqhk7hn4MLoACoOhhJHFlHa2ou%25KX%25n8HSfWQfgD%25V1Pa1XTfNEbnEUa10s9Os1TE4riIrZgscZwBZ4vrxRteRckZ857MGdTRUgChpW25GvlongCgpn0WNR10m7illZya2wdqfkPGhEbzLuSDyesix2l84WsKmUGpc1QuHAp3ERtXD3gpn23HGfvQFz9oNE47DlznJkjnWI%25AQrxlc9Nv2Z7d5yKlHS9Y3BUO30HVjr7sY7OVK3dBzcB4g0F" alt="BMW 3 LWB">
+              </div>
+              <div class="card-body">
+                <h3 class="model-title">3 LWB</h3>
+                <p class="model-meta">Sedan • Disel</p>
+                <p class="model-price">From Rs. 60,45,000</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!--CONCEPT-->
+        <div class="tab-panel panel-concept">
+          <div class="cards">
+            <article class="card animate">
+              <div class="card-figure">
+                <img src="https://www.bmw.in/content/dam/bmw/common/topics/fascination-bmw/concept-vehicles/navigation/bmw-vision-concept-neueklasse-x-modelcard.png.asset.1710931378867.png" alt="Vision Neue Klasse">
+              </div>
+              <div class="card-body">
+                <h3 class="model-title">Vision Neue Klasse</h3>
+                <p class="model-meta">Concept</p>
+              </div>
+            </article>
+
+            <article class="card animate">
+              <div class="card-figure">
+                <img src="https://www.bmw.in/content/dam/bmw/common/topics/fascination-bmw/concept-vehicles/navigation/bmw_neue_klasse_vision_modelcard.png.asset.1693582906615.png" alt="Concept Coupe">
+              </div>
+              <div class="card-body">
+                <h3 class="model-title">Concept Coupe</h3>
+                <p class="model-meta">Concept</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+      </div> 
+
+    </section>
+
+  </main>
+
+  <!--FOOTER-->
+  <footer>
+    <div class="footer-inner">
+      <p>Contact & Info • Assistance & Services • Models</p>
+      <p>© BMW AG 2025</p>
+    </div>
+  </footer>
+
+</body>
+</html>
