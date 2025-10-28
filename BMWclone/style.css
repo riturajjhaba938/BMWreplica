@@ -20,11 +20,9 @@ body {
   line-height: 1.6;
 }
 
-/* ---------------------------------
-   HEADER NAVIGATION
-----------------------------------*/
+/*HEADER NAVIGATION*/
 header {
-  position: fixed;
+  /*position: fixed;*/
   top: 0;
   left: 0;
   width: 100%;
